@@ -43,13 +43,13 @@ npx cypress run --spec "cypress/e2e/api/*.feature"
 🧪 Running in CI
 
 Tests are triggered automatically on:
-	•	Push to main
-	•	Pull request to main
+- Push to main
+- Pull request to main
 
 CI pipeline:
-	•	Installs Node.js and dependencies
-	•	Runs Cypress UI + API tests
-	•	Uploads screenshots and videos (if any test fails)
+- Installs Node.js and dependencies
+- Runs Cypress UI + API tests
+- Uploads screenshots and videos (if any test fails)
 
 You can view the test status in the Actions tab.
 
@@ -85,8 +85,8 @@ npx cypress open
 📸 Artifacts on Failure
 
 Cypress will capture and upload:
-	• cypress/screenshots – If a test fails
-	• cypress/videos – Full video of test run
+- cypress/screenshots – If a test fails
+- cypress/videos – Full video of test run
 
 These are visible in the GitHub Actions artifacts section.
 
