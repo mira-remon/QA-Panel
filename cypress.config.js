@@ -6,8 +6,8 @@ const addCucumberPreprocessorPlugin = require("@badeball/cypress-cucumber-prepro
 
 module.exports = defineConfig({
   env: {
-    email: process.env.EMAIL,
-    password: process.env.PASSWORD
+    email: "johndoe@example.com",
+    password: "secret"
   },
   reporter: "mochawesome",
   reporterOptions: {
