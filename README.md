@@ -30,7 +30,7 @@ npm install
 
 npx cypress open       # Interactive mode
 npx cypress run        # Headless mode
-
+```
 ⸻
 
 🧪 Running in CI
