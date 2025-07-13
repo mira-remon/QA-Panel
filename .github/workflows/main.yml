@@ -22,10 +22,8 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run Cypress tests and generate Cucumber report
-        run: |
-          npx cypress run
-          npm run generate:report
+      - name: Run Cypress tests
+        run: npx cypress run
 
       - name: Upload Cypress Screenshots
         if: always()
