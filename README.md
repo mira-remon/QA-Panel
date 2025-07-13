@@ -28,15 +28,8 @@ npm install
 
 3. Run tests locally
 
-UI (Cucumber-based)
-
 npx cypress open       # Interactive mode
 npx cypress run        # Headless mode
-
-API tests
-
-npx cypress run --spec "cypress/e2e/api/*.feature"
-
 
 ⸻
 
@@ -68,17 +61,6 @@ QA-Panel/
 ├── .github/workflows/         # GitHub Actions workflows
 ├── package.json               # Dependencies and scripts
 └── README.md
-
-
-⸻
-
-✅ NPM Scripts
-
-# Run UI tests
-npx cypress run
-
-# Run tests in Cypress UI
-npx cypress open
 
 ⸻
 
