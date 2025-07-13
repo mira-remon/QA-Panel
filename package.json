@@ -1,0 +1,16 @@
+{
+  "name": "qa-panel-cucumber",
+  "version": "1.0.0",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
+  },
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^15.0.1",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",
+    "cypress": "^14.5.1",
+    "dotenv": "^16.3.1",
+    "esbuild": "^0.19.11",
+    "mochawesome": "^7.1.3"
+  }
+}
