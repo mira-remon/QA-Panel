@@ -49,19 +49,30 @@ You can view the test status in the Actions tab.
 ⸻
 
 📁 Project Structure
-
+```bash
 QA-Panel/
+├── .github/                      # GitHub config (e.g., workflows)
 ├── cypress/
 │   ├── e2e/
-│   │   ├── api/               # API tests in Gherkin
-│   │   ├── ui/                # UI feature specs
-│   ├── fixtures/              # Test data
-│   ├── support/               # Custom commands and hooks
-│   └── reports/               # (optional) for future report generation
-├── .github/workflows/         # GitHub Actions workflows
-├── package.json               # Dependencies and scripts
-└── README.md
-
+│   │   ├── features/             # UI + API test scenarios in Gherkin
+│   │   │   ├── contact_crud_ui.feature
+│   │   │   └── get_contact_api.feature
+│   ├── pages/                    # Page Object files
+│   │   ├── contactPage.js
+│   │   └── loginPage.js
+│   ├── reports/
+│   │   └── assets/               # Placeholder for HTML/JSON reports
+│   ├── support/
+│   │   ├── step_definitions/     # Step definitions for Gherkin tests
+│   │   │   ├── contact_api_steps.js
+│   │   │   └── contact_steps.js
+│   │   └── e2e.js                # Cypress support index
+│   └── videos/                   # Cypress videos from test runs
+├── node_modules/                # Project dependencies
+├── cypress.config.js            # Cypress configuration
+├── package.json                 # Project metadata and scripts
+└── package-lock.json            # Dependency lockfile
+```
 ⸻
 
 📸 Artifacts on Failure
